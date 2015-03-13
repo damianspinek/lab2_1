@@ -7,7 +7,7 @@ import org.junit.Test;
 public class BinarySearchTest {
 
 	@Test
-	public void binarySearch_search_oneElement_inSeq() {
+	public void binarySearch_search_oneElement_inSeq_expectedTrue() {
 		int[] seq = {5};
 		
 		SearchResult result = BinarySearch.search(5, seq);		
@@ -17,7 +17,7 @@ public class BinarySearchTest {
 	}
 	
 	@Test
-	public void binarySearch_search_oneElement_notInSeq() {
+	public void binarySearch_search_oneElement_notInSeq_expectedFalse() {
 		int[] seq = {2};
 		
 		SearchResult result = BinarySearch.search(5, seq);		
@@ -27,7 +27,7 @@ public class BinarySearchTest {
 	}
 	
 	@Test
-	public void binarySearch_search_manyElement_firstInSeq() {
+	public void binarySearch_search_manyElement_firstInSeq_expectedTrue() {
 		int[] seq = {2,8,10};
 		
 		SearchResult result = BinarySearch.search(2, seq);		
@@ -37,7 +37,7 @@ public class BinarySearchTest {
 	}
 	
 	@Test
-	public void binarySearch_search_manyElement_lastInSeq() {
+	public void binarySearch_search_manyElement_lastInSeq_expectedTrue() {
 		int[] seq = {2,8,10};
 		
 		SearchResult result = BinarySearch.search(10, seq);		
@@ -47,7 +47,7 @@ public class BinarySearchTest {
 	}
 	
 	@Test
-	public void binarySearch_search_manyElement_middleInSeq() {
+	public void binarySearch_search_manyElement_middleInSeq_expectedTrue() {
 		int[] seq = {2,8,10};
 		
 		SearchResult result = BinarySearch.search(8, seq);		
@@ -57,7 +57,7 @@ public class BinarySearchTest {
 	}
 	
 	@Test
-	public void binarySearch_search_manyElement_notInSeq() {
+	public void binarySearch_search_manyElement_notInSeq_expectedFalse() {
 		int[] seq = {2,8,10};
 		
 		SearchResult result = BinarySearch.search(3, seq);		
