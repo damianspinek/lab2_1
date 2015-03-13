@@ -71,5 +71,15 @@ public class BinarySearchTest {
 		int[] seq = {};
 		SearchResult result = BinarySearch.search(3, seq);	
 	}
+	
+	@Test
+	public void binarySearch_search_manyElement_allElementsTheSame_expectedTrue() {
+		int[] seq = {2,2,2};
+		
+		SearchResult result = BinarySearch.search(2, seq);		
+		assertThat(result.getPosition(), is(2));
+		assertThat(result.isFound(), is(true));
+		
+	}
 
 }
